@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/navmenu_home"
+        android:checkable="true"
+        android:icon="@drawable/ic_drawable_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/navmenu_visit_cca_website"
+        android:checkable="true"
+        android:icon="@drawable/ic_drawable_web"
+        android:title="@string/visit_cca_jk_website" />
+
+    <item android:title="@string/functions">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navmenu_pension"
+                    android:icon="@drawable/ic_pension"
+                    android:title="@string/pension_grievance" />
+
+                <item
+                    android:id="@+id/navmenu_gpf"
+                    android:icon="@drawable/ic_drawable_gpf"
+                    android:title="@string/gpf_grievance" />
+
+                <item
+                    android:id="@+id/navmenu_saved_grievances"
+                    android:icon="@drawable/ic_sd_storage_black_24dp"
+                    android:title="@string/view_saved_grievance" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item
+        android:checkable="true"
+        android:title="@string/update_information">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navmenu_aadhaar"
+                    android:icon="@drawable/ic_drawable_aadhaar"
+                    android:title="@string/upload_aadhaar" />
+
+                <item
+                    android:id="@+id/navmenu_pan"
+                    android:icon="@drawable/ic_drawable_pancard"
+                    android:title="@string/upload_pan" />
+                <item
+                    android:id="@+id/navmenu_life_certificate"
+                    android:icon="@drawable/ic_life"
+                    android:title="@string/upload_life_certificate" />
+
+                <item
+                    android:id="@+id/navmenu_remarriage_certificate"
+                    android:icon="@drawable/ic_marriage"
+                    android:title="@string/upload_re_marriage_certificate" />
+
+                <item
+                    android:id="@+id/navmenu_reemployment"
+                    android:icon="@drawable/ic_employment"
+                    android:title="@string/upload_re_employment_certificate" />
+                <item
+                    android:id="@+id/navmenu_kyp"
+                    android:icon="@drawable/ic_kyp_black_24dp"
+                    android:title="@string/kyp" />
+
+            </group>
+
+        </menu>
+    </item>
+
+    <item
+        android:checkable="true"
+        android:title="@string/tracking">
+        <menu>
+
+            <item
+                android:id="@+id/navmenu_tracking"
+                android:checkable="true"
+                android:icon="@drawable/ic_drawable_tracking"
+                android:title="@string/track_grievances" />
+
+        </menu>
+    </item>
+
+
+    <item
+        android:checkable="true"
+        android:title="@string/others">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/navmenu_contact_us"
+                    android:icon="@drawable/ic_contact_phone_black_24dp"
+                    android:title="@string/contact_us" />
+                <item
+                    android:id="@+id/navmenu_latest_news"
+                    android:icon="@drawable/ic_news_icon"
+                    android:title="@string/latest_news" />
+                <item
+                    android:id="@+id/navmenu_hotspot_locator"
+                    android:icon="@drawable/ic_wifi_black_24dp"
+                    android:title="@string/wifi_hotspot_locator" />
+
+                <item
+                    android:id="@+id/navmenu_gp_locator"
+                    android:icon="@drawable/ic_gp"
+                    android:title="@string/gp_lit_locator" />
+            </group>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/staff_login"
+        android:checkable="true"
+        android:title="@string/staff_corner">
+        <menu>
+            <item
+                android:id="@+id/navmenu_login"
+                android:checkable="true"
+                android:icon="@drawable/ic_drawbale_login_24dp"
+                android:title="@string/login" />
+
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/staff_panel"
+        android:checkable="true"
+        android:title="@string/staff_corner">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navmenu_inspection"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_inspection"
+                    android:title="@string/inspection"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/navmenu_saved_inspections"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_inspection"
+                    android:title="@string/saved_inspections"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/navmenu_update_grievances"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_update_black_24dp"
+                    android:title="@string/update_grievances" />
+
+                <item
+                    android:id="@+id/navmenu_add_news"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_view_headline_black_24dp"
+                    android:title="@string/add_news" />
+
+                <item
+                    android:id="@+id/navmenu_logout"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_logout"
+                    android:title="@string/log_out" />
+            </group>
+        </menu>
+
+    </item>
+</menu>

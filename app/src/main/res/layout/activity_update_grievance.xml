@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mycca.custom.CircularReveal.Widget.RevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorLightGray"
+    tools:context="com.mycca.activity.UpdateGrievanceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/layout_grievance_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:elevation="@dimen/elevation_large"
+                app:cardCornerRadius="@dimen/corner_radius_medium"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_min">
+
+                    <TextView
+                        android:id="@+id/textview_number_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pensioner_hr_staff_code"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/margin_min"
+                        android:background="@color/colorGray" />
+
+                    <TextView
+                        android:id="@+id/textview_pensioner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_18"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:elevation="@dimen/elevation_large"
+                app:cardCornerRadius="@dimen/corner_radius_medium"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_min">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reference_number"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/margin_min"
+                        android:background="@color/colorGray" />
+
+                    <TextView
+                        android:id="@+id/textview_reference_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_18"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+
+                android:elevation="@dimen/elevation_large"
+                app:cardCornerRadius="@dimen/corner_radius_medium"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_min">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grievance"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/margin_min"
+                        android:background="@color/colorGray" />
+
+                    <TextView
+                        android:id="@+id/textview_confirm5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_18"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:elevation="@dimen/elevation_large"
+                app:cardCornerRadius="@dimen/corner_radius_medium"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_min">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grievance_application_date"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/margin_min"
+                        android:background="@color/colorGray" />
+
+                    <TextView
+                        android:id="@+id/textview_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_18"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_update_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/padding_large"
+                    android:text="@string/update_status"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_18"
+                    tools:ignore="ObsoleteLayoutParam,RtlSymmetry" />
+
+                <Spinner
+                    android:id="@+id/spinner_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/padding_medium"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_toEndOf="@id/text_update_status"
+                    android:background="@drawable/bg_spinner"
+                    android:gravity="center_vertical"
+                    tools:ignore="ObsoleteLayoutParam" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/padding_large"
+                    android:text="@string/message"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_18"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/edittext_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_18"
+                    tools:ignore="LabelFor" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_selected_file_count_update"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/colorOffWhite"
+                android:drawablePadding="@dimen/padding_medium"
+                android:gravity="center"
+                android:padding="@dimen/padding_medium"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_update_grievance_attachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_attach_update_grievance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:tint="@color/colorWhite"
+        app:srcCompat="@drawable/ic_view_menu_black_24dp"
+        tools:targetApi="m" />
+
+    <com.mycca.custom.FabRevealMenu.FabView.FABRevealMenu
+        android:id="@+id/fabMenu_Update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:foregroundTint="@color/colorWhite"
+        app:animateItems="true"
+        app:menuBackgroundColor="@color/colorPrimaryLight"
+        app:menuDirection="up"
+        app:menuSize="normal"
+        app:menuTitleDisabledTextColor="@color/colorAccent"
+        app:menuTitleTextColor="@color/colorWhite"
+        app:showOverlay="true"
+        app:showTitle="true"
+        tools:targetApi="lollipop" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:background="@drawable/custom_button"
+        android:drawablePadding="@dimen/padding_min"
+        android:drawableTint="@color/colorWhite"
+        android:text="@string/update"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_18"
+        tools:targetApi="m" />
+
+</com.mycca.custom.CircularReveal.Widget.RevealRelativeLayout>

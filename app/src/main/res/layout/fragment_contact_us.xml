@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorAccentLight"
+    android:orientation="vertical"
+    tools:context="com.mycca.fragments.ContactUsFragment">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textview_heading_office_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="@dimen/padding_medium"
+        android:fontFamily="@font/artifika"
+        android:padding="@dimen/padding_large"
+        android:text="@string/office_address"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_20"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorBlack"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_office_Address_Area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOffWhite"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textview_office_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/imprima"
+            android:padding="@dimen/padding_large"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_15"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_locate_on_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:background="@drawable/custom_button_rounded"
+            android:drawablePadding="@dimen/padding_large"
+            android:drawableTint="@color/colorWhite"
+            android:paddingLeft="@dimen/padding_xxlarge"
+            android:paddingRight="@dimen/padding_xxlarge"
+            android:text="@string/locate_on_map"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_15"
+            tools:targetApi="m" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@color/colorBlack"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textview_contact_person_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="@dimen/padding_medium"
+            android:fontFamily="@font/artifika"
+            android:padding="@dimen/padding_large"
+            android:text="@string/contact_persons"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorBlack"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorOffWhite"
+            android:paddingBottom="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

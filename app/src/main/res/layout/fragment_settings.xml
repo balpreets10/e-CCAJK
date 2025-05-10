@@ -1,0 +1,203 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycca.fragments.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <Switch
+            android:id="@+id/switch_settings_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:checked="true"
+            android:drawablePadding="@dimen/padding_large"
+            android:drawableTint="@color/colorAccent"
+            android:padding="@dimen/padding_medium"
+            android:switchPadding="@dimen/padding_large"
+            android:text="@string/notifications"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_20"
+            tools:targetApi="m" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:id="@+id/layout_settings_change_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_settings_change_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_large"
+                android:drawableTint="@color/colorAccent"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:paddingTop="@dimen/padding_medium"
+                android:text="@string/change_circle"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_20"
+                tools:targetApi="m" />
+
+            <TextView
+                android:id="@+id/tv_settings_current_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_xxxlarge"
+                android:text="@string/current_circle"
+                android:textSize="@dimen/text_18"
+                android:textStyle="italic"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:id="@+id/layout_settings_change_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_settings_change_lang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_large"
+                android:drawableTint="@color/colorAccent"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:paddingTop="@dimen/padding_medium"
+                android:text="@string/change_language"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_20"
+                tools:targetApi="m" />
+
+            <TextView
+                android:id="@+id/tv_settings_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_xxxlarge"
+                android:textSize="@dimen/text_18"
+                android:textStyle="italic"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/tv_settings_view_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_large"
+            android:drawableTint="@color/colorAccent"
+            android:paddingBottom="@dimen/padding_large"
+            android:paddingLeft="@dimen/padding_medium"
+            android:paddingRight="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_xlarge"
+            android:text="@string/view_tutorials_again"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_20"
+            tools:targetApi="m" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:id="@+id/layout_settings_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_settings_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_large"
+                android:drawableTint="@color/colorAccent"
+                android:paddingBottom="@dimen/padding_large"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:paddingTop="@dimen/padding_xlarge"
+                android:text="@string/change_password"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_20"
+                tools:targetApi="m" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/colorGray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_settings_sign_in_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_settings_sign_in_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_large"
+                android:drawableTint="@color/colorAccent"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:paddingTop="@dimen/padding_medium"
+                android:text="@string/sign_out"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_20"
+                tools:targetApi="m" />
+
+            <TextView
+                android:id="@+id/tv_settings_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_xxxlarge"
+                android:text="@string/signed_in"
+                android:textSize="@dimen/text_18"
+                android:textStyle="italic"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorGray" />
+    </LinearLayout>
+
+</ScrollView>

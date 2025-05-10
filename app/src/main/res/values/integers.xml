@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="animated_dismissable_activity_animations_duration">3000</integer>
+    <integer name="animated_dismissable_activity_dismiss_with_touch_percentage">10</integer>
+    <integer name="horizontal_menu_max_lines">1</integer>
+</resources>

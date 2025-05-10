@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_update_grievance_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_update_grievances"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryLight"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorBlack"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorBlack"
+            app:tabTextColor="@color/colorWhite"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_update_grievance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_no_internet_update_grievance_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:clickable="true">
+
+        <ImageButton
+            android:id="@+id/image_btn_refresh_update_grievance_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/custom_button_rounded"
+            android:padding="@dimen/padding_large"
+            android:tint="@color/colorOffWhite"
+            app:srcCompat="@drawable/ic_refresh_black_24dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textview_locator_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorOffWhite"
+            android:padding="@dimen/padding_large"
+            android:text="@string/no_internet"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_20" />
+    </RelativeLayout>
+
+</FrameLayout>
+
+

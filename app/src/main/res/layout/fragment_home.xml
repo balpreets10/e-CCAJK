@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_home_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent"
+        android:drawablePadding="@dimen/padding_medium"
+        android:drawableTint="@color/colorWhite"
+        android:padding="@dimen/padding_medium"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_18"
+        tools:targetApi="m" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_home_username"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <com.mycca.custom.CustomImageSlider.SliderLayout
+            android:id="@+id/slider_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.mycca.custom.CustomImageSlider.SliderLayout>
+        <!--<ImageView-->
+        <!--android:id="@+id/image_view_home"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1" />-->
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@color/colorLightGray">
+        </View>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_home_latest_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:drawablePadding="@dimen/padding_medium"
+                android:drawableTint="@color/colorWhite"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/latest_from_cca"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_20"
+                tools:targetApi="m" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_home_latest_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:background="@color/colorLightGray"
+                    android:paddingTop="@dimen/padding_medium"
+                    android:paddingRight="@dimen/padding_medium"
+                    android:paddingLeft="@dimen/padding_medium"
+                    android:paddingBottom="@dimen/padding_xxxlarge"/>
+
+                <ImageButton
+                    android:id="@+id/img_btn_move_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:background="@drawable/circular_background_simple_text"
+                    app:srcCompat="@drawable/ic_arrow_left_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+                <ImageButton
+                    android:id="@+id/img_btn_move_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:background="@drawable/circular_background_simple_text"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_medium">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_xxxxlarge"
+                android:background="@drawable/textview_background_left">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/padding_medium"
+                    android:text="Welcome to CCA JK"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_20"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textview_welcome_short"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:clickable="true"
+                android:justificationMode="inter_word"
+                android:text="@string/welcome_short"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_medium" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xxxxlarge"
+                android:background="@drawable/textview_background_right">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="From CCA's Desk"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_20"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textview_cca_desk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:justificationMode="inter_word"
+                android:padding="@dimen/padding_medium"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:text="@string/from_cca_desk_short"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_home_visit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorAccent"
+        android:drawablePadding="@dimen/padding_medium"
+        android:drawableTint="@color/colorWhite"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/visit_us"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_20"
+        tools:targetApi="m" />
+
+</RelativeLayout>

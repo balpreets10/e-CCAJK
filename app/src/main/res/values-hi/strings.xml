@@ -1,0 +1,377 @@
+﻿<resources>
+
+    <string name="app_name">मेरा सीसीए</string>
+
+    <!--Action bar titles -->
+    <string name="home">होम</string>
+    <string name="pension_grievance">पेंशन शिकायत</string>
+    <string name="gpf_grievance">जीपीएफ शिकायत</string>
+    <string name="view_saved_grievance">सहेजी गई शिकायतें</string>
+    <string name="upload_aadhaar">आधार अपलोड करें</string>
+    <string name="upload_pan">पैन अपलोड करें</string>
+    <string name="upload_life_certificate">जीवन प्रमाण पत्र </string>
+    <string name="upload_re_marriage_certificate">पुन: विवाह प्रमाण पत्र</string>
+    <string name="upload_re_employment_certificate">पुन: रोजगार प्रमाणपत्र </string>
+    <string name="kyp">के वाई पी</string>
+    <string name="track_grievances">शिकायतें पता करें</string>
+    <string name="contact_us">हमसे संपर्क करें</string>
+    <string name="latest_news">ताज़ा खबर</string>
+    <string name="wifi">वाईफ़ाई हॉटस्पॉट स्थान</string>
+    <string name="gp">ग्राम पंचायत स्थान</string>
+    <string name="inspection">निरीक्षण</string>
+    <string name="saved_inspections">सहेजे गए निरीक्षण</string>
+    <string name="update_grievances">शिकायतें अपडेट करें</string>
+    <string name="add_news">समाचार जोड़ें</string>
+    <string name="feedback">प्रतिक्रिया</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="about_us">हमारे बारे में</string>
+
+    <!--Nav menu -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="visit_cca_jk_website">वेबसाइट देखें</string>
+    <string name="functions">कार्य</string>
+    <string name="update_information">जानकारी अद्यतन</string>
+    <string name="tracking">शिकायत पता</string>
+    <string name="others">अन्य</string>
+    <string name="wifi_hotspot_locator">वाईफ़ाई हॉटस्पॉट लोकेटर</string>
+    <string name="gp_lit_locator">जीपी एलआईटी लोकेटर</string>
+    <string name="staff_corner">कर्मचारी कॉर्नर</string>
+    <string name="log_out">लोग आउट</string>
+
+    <!--OPtions Menu-->
+    <string name="invite">आमंत्रण</string>
+    <string name="about">विषय में</string>
+    <string name="action_refresh">पुनः लोड करें</string>
+    <string name="action_clear_all">फॉर्म डेटा साफ़ करें</string>
+    <string name="clear">सब साफ़ करें </string>
+
+    <!--Floating menu-->
+    <string name="add_image">छवि फ़ाइल जोड़ें</string>
+    <string name="remove_all">सभी हटाएं</string>
+    <string name="remove_image">छवि फ़ाइल निकालें</string>
+    <string name="scan_adhaar">आधार कार्ड स्कैन करें</string>
+
+    <!--Form fields-->
+    <string name="no_image">कोई छवि चयनित नहीं है</string>
+    <string name="files_selected">%1$s छवि चयनित</string>
+    <string name="circle">क्षेत्र</string>
+    <string name="g_type">शिकायत का प्रकार</string>
+    <string name="submitted_by">शिकायत प्रस्तुत द्वारा</string>
+    <string name="g_details">शिकायत विवरण</string>
+    <string name="upload_using">निम्नलिखित का उपयोग कर अपलोड करें</string>
+    <string name="p_code">पेंशनर कोड</string>
+    <string name="hr_num">एच आर संख्या</string>
+    <string name="staff_num">स्टाफ संख्या</string>
+    <string name="mobile_num">मोबाइल नंबर</string>
+    <string name="email">ईमेल</string>
+    <string name="applicant_name">आवेदक का नाम</string>
+    <string name="aadhaar_no">आधार संख्या</string>
+    <string name="pan_no">पैन संख्या</string>
+    <string name="grievances_registered_using">शिकायत निम्नलिखित का उपयोग कर पंजीकृत हैं</string>
+    <string name="location">स्थान समन्वय</string>
+    <string name="location_hint">स्थान का नाम दर्ज करें</string>
+    <string name="pensioner_hr_staff_code">Pensioner/HR/Staff Code</string>
+    <string name="grievance">शिकायत</string>
+    <string name="grievance_application_date">शिकायत आवेदन दिनांक</string>
+    <string name="reference_number">संदर्भ संख्या</string>
+    <string name="update_status">स्थिति अपडेट करें:</string>
+    <string name="message">संदेश:</string>
+    <string name="headline">शीर्षक</string>
+    <string name="details">विवरण</string>
+    <string name="login">लॉग इन </string>
+    <string name="change">परिवर्तन करें</string>
+    <string name="update">अद्यतन करें</string>
+    <string name="track">पता करें</string>
+    <string name="submit">जमा करें</string>
+    <string name="submit_now">अभी जमा करे</string>
+    <string name="save">भविष्य के लिए सहेजें </string>
+
+    <!--tutorial Strings-->
+    <string name="tutorial_title0">स्वागत हे</string>
+    <string name="tutorial_title1">@string/functions</string>
+    <string name="tutorial_title2">@string/tracking</string>
+    <string name="tutorial_title3">अन्य जानकारी जोड़ें</string>
+    <string name="tutorial_title4">गूगल से साइन इन</string>
+    <string name="tutorial_text0">संचार लेखा नियंत्रक के आधिकारिक एंड्रॉइड एप्लिकेशन में आपका स्वागत है|</string>
+    <string name="tutorial_text1">पेंशनभोगी मुख्य मेनू से पेंशन या जीपीएफ शिकायत विकल्प का उपयोग करके अपनी शिकायतों को पंजीकृत कर सकते हैं|</string>
+    <string name="tutorial_text2">पेंशनभोगी मुख्य मेनू से शिकायतें पता करें विकल्प का उपयोग करके अपनी शिकायतों की स्थिति भी देख सकते हैं|</string>
+    <string name="tutorial_text3">पेंशनभोगी मुख्य मेनू में जानकारी अद्यतन अनुभाग के माध्यम से आधार पैन आदि जैसी अन्य जानकारी को जोड़ सकते हैं|</string>
+    <string name="tutorial_text4">ऐप सुविधाओं को गूगल साइन इन की आवश्यकता है। आप माध्यमिक मेनू में सेटिंग्स विकल्प का उपयोग करके स्वयं से साइन इन और साइन आउट कर सकते हैं</string>
+
+    <!--status strings-->
+    <string name="submitted">निवेदित</string>
+    <string name="under_process">प्रक्रियाधीन</string>
+    <string name="resolved">हल हो गयी</string>
+
+    <!--grievance types-->
+    <string name="change_of_pda">पी.डी.ए का परिवर्तन</string>
+    <string name="correction_in_ppo">पी.पी.ओ में सुधार</string>
+    <string name="wrong_fixation">पेंशन का गलत निर्धारण</string>
+    <string name="non_updation_da">डी.ए. का अपरिवर्तनीयता</string>
+    <string name="non_payment_monthly">मासिक पेंशन का भुगतान नहीं</string>
+    <string name="non_payment_medical">चिकित्सा भत्ता का भुगतान नहीं</string>
+    <string name="non_starting_pension">परिवार पेंशन की शुरूआत नहीं</string>
+    <string name="non_revision">नवीनतम सी.पी.सी के अनुसार गैर संशोधन</string>
+    <string name="request_cgies">सी.जी.आई.ई.एस. के लिए अनुरोध</string>
+    <string name="excess_short_payment">अतिरिक्त/लघु भुगतान</string>
+    <string name="enhancement_on_75_80">75/80 प्राप्त करने पर पेंशन में वृद्धि</string>
+    <string name="other_pension_gr">अन्य पेंशन शिकायत</string>
+    <string name="gpf_final_not_received">जी.पी.एफ अंतिम भुगतान प्राप्त नहीं हुआ</string>
+    <string name="correction_name">नाम में सुधार</string>
+    <string name="change_nomination">नामांकन का परिवर्तन</string>
+    <string name="gpf_acc_not_transferred">जी.पी.एफ खाता स्थानांतरित नहीं किया गया</string>
+    <string name="details_of_gpf_deposit">जी.पी.एफ जमा ए/सी पर्ची का विवरण</string>
+    <string name="non_payment_gpf_withdrawal">जी.पी.एफ निकालने का भुगतान नहीं</string>
+    <string name="other_gpf_gr">अन्य जी.पी.एफ शिकायत</string>
+
+    <!--splash -->
+    <string name="splash_text">संचार लेखा नियंत्रक\nजम्मू-कश्मीर\nदूरसंचार विभाग</string>
+    <string name="version">संस्करण %1$s</string>
+
+    <!--home-->
+    <string name="hello">नमस्ते </string>
+    <string name="latest_from_cca">सीसीए से ताज़ा खबर</string>
+    <string name="visit_us">हमसे मिलें</string>
+
+    <!--login-->
+    <string name="username">प्रयोक्ता नाम</string>
+    <string name="password">पासवर्ड</string>
+    <string name="input_username">कृपया प्रयोक्ता नाम दर्ज करें</string>
+    <string name="input_password">कृप्या पास्वर्ड दर्ज करें</string>
+    <string name="no_user_found">कोई उपयोगकर्ता नहीं मिला</string>
+    <string name="password_mismatch">पासवर्ड का मेल नहीं हुआ</string>
+
+    <!--grievance-->
+    <string name="pension">पेंशन</string>
+    <string name="gpf">जीपीएफ</string>
+    <string name="invalid_p_code">मान्य पेंशनर संख्या दर्ज करें</string>
+    <string name="invalid_hr_num">मान्य एच.आर संख्या दर्ज करें</string>
+    <string name="invalid_staff_num">मान्य स्टाफ नंबर दर्ज करें</string>
+    <string name="invalid_mobile">मान्य मोबाइल नंबर दर्ज करें</string>
+    <string name="invalid_email">मान्य ईमेल दर्ज करें</string>
+    <string name="empty_detail">विवरण जोड़ें</string>
+    <string name="pensioner">पेंशनभोगी</string>
+    <string name="gpf_benificiary">जीपीएफ हितभागी</string>
+    <string name="other">अन्य</string>
+    <string name="grievance_submission_success">संदर्भ संख्या\n %3$s \nके साथ<b> %2$s </b>के लिए %1$s शिकायत सफलतापूर्वक जमा कर दी गई है|</string>
+    <string name="grievance_submission_fail">शिकायत जमा नहीं हो पाई\n फिर से कोशिश करें</string>
+
+    <!--panAdhaar-->
+    <string name="number">%1$s संख्या</string>
+    <string name="invalid_aadhaar">अवैध आधार संख्या</string>
+    <string name="invalid_pan">अवैध पैन संख्या</string>
+    <string name="invalid_name">गलत नाम</string>
+    <string name="updation_success">%1$s के लिए अद्यतन अनुरोध सफलतापूर्वक जमा कर दिया गया है</string>
+    <string name="updation_failed">अद्यतन जानकारी अपलोड करने के लिए अनुरोध विफल\nफिर से कोशिश करें</string>
+
+    <!--kyp-->
+    <string name="download_kyp_form">केवाईपी फॉर्म डाउनलोड करें</string>
+    <string name="submit_kyp_form">केवाईपी फॉर्म जमा करें</string>
+    <string name="kyp_upload_success">आपका केवाईपी फॉर्म सफलतापूर्वक अपलोड हो गया है</string>
+    <string name="kyp_upload_fail">केवाईपी फॉर्म अपलोड नहीं किया जा सका</string>
+    <string name="add_kyp_image">कृपया अपने विधिवत भरे केवाईपी फॉर्म की छवि फ़ाइल जोड़ें</string>
+
+    <!--contact us-->
+    <string name="office_address">कार्यालय का पता</string>
+    <string name="locate_on_map">गूगल मानचित्र पर खोजें</string>
+    <string name="contact_persons">इनसे संपर्क करें</string>
+    <string name="contact_na">इस व्यक्ति के संपर्क विवरण उपलब्ध नहीं हैं</string>
+    <string name="email_na">ईमेल उपलब्ध नहीं है</string>
+
+    <!-- hotspots -->
+    <string name="search">स्थान खोजें</string>
+    <string name="sort">क्रम में लगाएं</string>
+    <string name="search_locations">स्थान खोजें</string>
+    <string name="select_circle">क्षेत्र चुनें</string>
+    <string name="select_district">जिला का चयन करें</string>
+    <string name="sort_locations">इस माध्यम से स्थानों को क्रम में लगाएं</string>
+    <string name="name">नाम</string>
+    <string name="district">जिला</string>
+    <string name="msg_no_location">इस सुविधा के लिए जीपीएस की आवश्यकता है।\nजीपीएस को चालू करें और पुनः लोड करें</string>
+    <string name="within_36_km">36 किलोमीटर के भीतर</string>
+    <string name="within">%1$s किलोमीटर के भीतर</string>
+    <string name="all_locations">समस्त स्थान</string>
+    <string name="nearby">समीप</string>
+    <string name="no_locations_found">कोई स्थान नहीं मिला</string>
+    <string name="increase_radius">कोई स्थान समीप नहीं \n घेरा बढ़ाएं</string>
+    <string name="current_pos">वर्तमान स्थान</string>
+    <string name="enable_location">कृपया जीपीएस और इंटरनेट चालू करें</string>
+    <string name="you_are_here">आप यहाँ हैं</string>
+    <string name="turning_on_location">जीपीएस चालू हो रहा है\nकृपया प्रतीक्षा करें…</string>
+    <string name="loc_off">जीपीएस बंद है! \nजीपीएस के बिना समीप स्थानों को पाने में असमर्थ।</string>
+    <string name="location_denied">डिवाइस स्थान अनुमति अस्वीकार की गयी! \nहॉटस्पॉट लोकेटर जीपीएस के बिना काम नहीं करेगा।\n\nकृपया अनुमति दें</string>
+
+
+    <!--inspection-->
+    <string name="current_location">मौजूदा स्थान\n%1$s,%2$s</string>
+    <string name="location_not_found">मौजूदा स्थान नहीं मिला!\nपुनः लोड करने के लिए स्पर्श करें</string>
+    <string name="location_req">स्थान का नाम आवश्यक है</string>
+    <string name="coordinates_req">कृपया पहले मौजूदा स्थान निर्देशांक लोड करें</string>
+    <string name="image_req">कोई चित्र नहीं जोड़ा गया</string>
+    <string name="inspection_failed">निरीक्षण जमा नहीं हो पाया\nफिर से कोशिश करें</string>
+    <string name="inspection_success">%1$s के लिए निरीक्षण डेटा सफलतापूर्वक जमा कर दिया गया है</string>
+
+    <!--update grievance-->
+    <string name="no_grievances_resolved">कोई शिकायत हल नहीं हुई</string>
+    <string name="no_grievances_submitted">कोई नई शिकायत जमा नहीं है</string>
+    <string name="no_grievances_processing">प्रक्रिया के तहत कोई शिकायत नहीं</string>
+    <string name="grievance_updation_success">%2$s के लिए %1$s की शिकायत स्थिति को सफलतापूर्वक %3$s में अपडेट कर दिया गया है</string>
+    <string name="grievance_updation_fail">शिकायत अद्यतन विफल \nफिर से कोशिश करें</string>
+    <string name="notification_title">शिकायत स्थिति अद्यतन</string>
+    <string name="notification_body">%1$s के लिए आपकी शिकायत %2$s है|</string>
+
+    <!--News-->
+    <string name="headline_req">शीर्षक आवश्यक है</string>
+    <string name="description_req">विवरण आवश्यक है</string>
+    <string name="news_added">समाचार सफलतापूर्वक जोड़ा गया</string>
+    <string name="delete_news">इस समाचार को हटाएं?</string>
+    <string name="delete">हटाएं</string>
+    <string name="news_deleted">समाचार हटा दिया गया है|</string>
+    <string name="news_not_deleted">समाचार नहीं हटाया जा सका \nफिर से प्रयास करें</string>
+
+    <!--About-->
+    <string name="about_us_string">यह एप्लिकेशन गैमिंग ड्रोनज़, जम्मू द्वारा डिज़ाइन की गयी है और संभाली जा रही हैै|</string>
+    <string name="about_developer">डेवलपर के बारे में</string>
+    <string name="disclaimer">अस्वीकरण</string>
+    <string name="disclaimer_content">यह संचार लेखा नियंत्रक, जम्मू और कश्मीर का आधिकारिक एंड्रॉइड एप्लिकेशन है।
+इस ऐप के लिए जानकारी संचार लेखा नियंत्रक, जम्मू और कश्मीर द्वारा प्रदान की जाती है।
+हालांकि सही और अद्यतन जानकारी प्रदान करने के लिए हर देखभाल की गई है, गेमिंग डोनोज़ किसी भी त्रुटि/चूक या डेटा/जानकारी को अद्यतन करने में देरी के लिए ज़िम्मेदार नहीं है।
+इसलिए ऐप के उपयोगकर्ताओं को सीसीए से संपर्क करने का अनुरोध किया जाता है।</string>
+
+    <!--feedback-->
+    <string name="like_the_application">एप्लिकेशन पसंद आयी?</string>
+    <string name="rate_5_stars">पांच सितार रेट करें</string>
+    <string name="have_a_suggestion">कोई सुझाव है?</string>
+    <string name="suggestion">सुझाव</string>
+    <string name="submit_advice">सलाह जमा करें</string>
+    <string name="thanks_for_feedback">आपका सुझाव हमारे लिए बहुत मायने रखता है!\nधन्यवाद</string>
+    <string name="no_suggestion">कोई सुझाव नहीं!</string>
+    <string name="suggestion_sign_in">आप गूगल साइन इन किए बिना सुझाव जमा नहीं कर सकते हैं</string>
+
+
+    <!--settings-->
+    <string name="notifications">सूचनाएं:</string>
+    <string name="change_circle">क्षेत्र बदलें</string>
+    <string name="current_circle">मौजूदा क्षेत्र: %1$s</string>
+    <string name="language">भाषा: %1$s</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="choose_language">भाषा चुनें:</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="hindi">हिंदी</string>
+    <string name="view_tutorials_again">फिर से ट्यूटोरियल देखें</string>
+    <string name="signed_in">आप साइन इन हैं: %1$s</string>
+    <string name="sign_out">साइन आउट</string>
+    <string name="sign_out_from_google">गूगल से साइन आउट करें?</string>
+    <string name="signed_out">आप साइन आउट हैं</string>
+    <string name="select">चुनें</string>
+
+    <!--change password-->
+    <string name="confirm_new_password">नए पासवर्ड की पुष्टि करें</string>
+    <string name="new_password">नया पासवर्ड</string>
+    <string name="old_password">पुराना पासवर्ड</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <string name="empty_old">पुराना पासवर्ड दर्ज करें</string>
+    <string name="empty_new">नया पासवर्ड दर्ज करें</string>
+    <string name="new_not_matching">पासवर्ड की पुष्टि नए पासवर्ड से मेल नहीं खाती है</string>
+    <string name="google_signin_first">कृपया पहले गूगल से साइन इन करें</string>
+    <string name="try_after_signin">साइन इन करने के बाद पुनः प्रयास करें</string>
+    <string name="password_change_success">पासवर्ड सफलतापूर्वक बदला गया</string>
+    <string name="password_change_fail">पासवर्ड बदला नहीं जा सका</string>
+    <string name="incorrect_old">पुराना पासवर्ड गलत</string>
+
+    <!--progress dialog messages-->
+    <string name="signing_in">साइन इन हो रहा है…</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें…</string>
+    <string name="checking_grievance">शिकायतें प्राप्त हो रहीं है\n\nकृपया प्रतीक्षा करें…</string>
+    <string name="fetching_grievance">शिकायत विवरण प्राप्त हो रही है…</string>
+    <string name="processing">प्रक्रिया में है…</string>
+    <string name="uploading_files">फ़ाइलें अपलोड हो रहीं है…\nकृपया प्रतीक्षा करें</string>
+    <string name="uploaded_file">%1$s / %2$s फ़ाइलें अपलोड की गईं</string>
+    <string name="almost_done">लगभग हो गया…</string>
+    <string name="getting_coordinates">मौजूदा स्थान निर्देशांक प्राप्त हो रहा है…</string>
+
+    <!--invitation-->
+    <string name="invitation_deep_link">https://play.google.com/store/apps/details?id=com.mycca</string>
+    <string name="invitation_message">सीसीए की आधिकारिक एंड्रॉइड एप्लिकेशन</string>
+    <string name="invitation_message_heading">सीसीए जे एंड के की आधिकारिक एंड्रॉइड एप्लिकेशन का शुभारंभ हो गया है।इसे यहाँ देखें..</string>
+
+    <!-- CropView -->
+    <string name="crop_image_activity_title">काटें</string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">काटें</string>
+    <string name="pick_image_intent_chooser_title">स्रोत चुनें</string>
+
+    <!--barcode-->
+    <string name="permission_camera_rationale">पहचान के लिए कैमरे की आवश्यकता है</string>
+    <string name="no_camera_permission">कैमरा की अनुमति नहीं दी गई। बारकोड नहीं पढ़ा जा सकता|</string>
+    <string name="low_storage_error">कम डिवाइस भंडारण के कारण फेस डिटेक्टर निर्भरता डाउनलोड नहीं की जा सकती है</string>
+
+     <!-- MSG91 strings -->
+    <string name="sendotp_key">234505AfT6wD35Xez05b86d9ae</string>
+    <string name="sending_sms">एक चार अंक ओ.टी.पी आपके मोबाइल नंबर पर भेजा गया है। सबमिशन जारी रखने के लिए, कृपया ओ.टी.पी सत्यापित करें।</string>
+    <string name="entercode">आपको प्राप्त कोड दर्ज करें</string>
+    <string name="enter">दर्ज करें</string>
+    <string name="resend_via_call">कॉल के माध्यम से पुनः भेजें ( %1$s )</string>
+    <string name="inprogress">जाँच हो रही है…</string>
+    <string name="verified">जाँच सफल</string>
+    <string name="failed">ओ.टी.पी की जाँच असफल</string>
+
+    <!--others-->
+    <string name="no_internet">कनेक्शन उपलब्ध नहीं है</string>
+    <string name="connect_to_internet">कृपया पहले इंटरनेट से कनेक्ट करें।</string>
+    <string name="refresh">इंटरनेट चालू करें और पुनः लोड करें</string>
+    <string name="no_grievance">कोई शिकायत पंजीकृत नहीं है</string>
+    <string name="n_a">उपलब्ध नहीं है</string>
+    <string name="skip">स्किप</string>
+    <string name="finish">समाप्त</string>
+    <string name="ok">ठीक है</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="sign_in">साइन इन करें</string>
+    <string name="sign_in_with_google">गूगल के साथ साइन इन करें</string>
+    <string name="sign_in_success">साइन इन सफल</string>
+    <string name="sign_in_fail">साइन इन करने में असमर्थ</string>
+    <string name="try_again">कृपया पुन: प्रयास करें</string>
+    <string name="try_again_different_account">इस खाते के साथ प्रमाणीकृत करने में असमर्थ।\nकृपया एक अलग खाते से पुनः प्रयास करें</string>
+    <string name="some_error">कुछ समस्या हुई</string>
+    <string name="success">डेटा सफलतापूर्वक जमा किया गया</string>
+    <string name="failure">डेटा जमा नहीं हो पाया</string>
+    <string name="confirm_input">अपने इनपुट की पुष्टि करें</string>
+    <string name="auth_message1">कृपया इस ऐप सुविधा का उपयोग करने के लिए गूगल के साथ साइन इन करें।</string>
+    <string name="auth_message2">अधिकांश ऐप के कार्यों के लिए आपको गूगल से प्रमाणित करने की आवश्यकता होती है। सभी ऐप सुविधाओं का उपयोग करने के लिए कृपया साइन इन करें।</string>
+    <string name="logout">लोग आउट?</string>
+    <string name="logged_out">बाहर आ गये</string>
+    <string name="exit">क्या आप ऐप बंद करना चाहते हैं?</string>
+    <string name="staff_login_success">स्टाफ का लॉग इन सफल</string>
+    <string name="skip_tutorial">सीसीए ट्यूटोरियल संदेश छोड़ें?</string>
+    <string name="file_upload_error">फ़ाइल अपलोड त्रुटि</string>
+    <string name="file_not_uploaded">फ़ाइलों को अपलोड नहीं किया जा सका \nदोबारा प्रयास करें</string>
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="file">फ़ाइल-</string>
+    <string name="reload_app">ऐप पुनः लोड करें?</string>
+    <string name="reload">पुनः लोड</string>
+    <string name="reload_req">इस सुविधा के लिए ऐप को पुनः लोड करने की आवश्यकता है</string>
+    <string name="update_available">एप्लिकेशन का एक नया संस्करण गूगल प्ले स्टोर पर उपलब्ध है \nएप्लिकेशन का उपयोग जारी रखने के लिए अद्यतन करें</string>
+    <string name="app_maintenance">एप्लिकेशन रखरखाव में है \nकृपया थोड़ी देर प्रतीक्षा करें \nआपके धैर्य के लिए धन्यवाद</string>
+    <string name="website_n_a">वेबसाइट का डेटा उपलब्ध नहीं है</string>
+    <string name="office_location_n_a">कार्यालय स्थान का डेटा उपलब्ध नहीं है</string>
+    <string name="office_address_n_a">कार्यालय का पता उपलब्ध नहीं है</string>
+    <string name="no_map_app">नक्शे के लिए कोई एप्लिकेशन इंस्टॉल नहीं है</string>
+    <string name="data_missing_message">इस ऐप सुविधा का उपयोग जारी रखने के लिए कृपया आवश्यक डेटा डाउनलोड करें।</string>
+    <string name="data_missing_title">कुछ डेटा अनुपलब्ध है!</string>
+    <string name="download">डाउनलोड</string>
+    <string name="download_success_title">डेटा सफलतापूर्वक डाउनलोड हो गया</string>
+    <string name="download_success_message">आप ऐप सुविधाओं का उपयोग जारी रख सकते हैं।</string>
+    <string name="download_fail_title">डेटा डाउनलोडिंग असफल रहा</string>
+    <string name="data_save_success">डेटा सफलतापूर्वक सहेजा गया</string>
+    <string name="data_save_fail">डेटा सहेजते समय त्रुटि</string>
+    <string name="data_deleted">डेटा हटा दिया गया है</string>
+    <string name="data_not_deleted">डेटा हटाया नहीं जा सका</string>
+    <string name="state_n_a">जिस क्षेत्र को आप प्रयोग करने का प्रयास कर रहे हैं वह अब उपलब्ध नहीं है। \nकृपया ऐप डेटा अपडेट करें।</string>
+    <string name="proceed">आगे जाएँ</string>
+    <string name="close">बंद करे</string>
+    <string name="no_circles">इंटरनेट कनेक्शन उपलब्ध नहीं है| कुछ डेटा डाउनलोड नहीं किया जा सका|\nऐप का उपयोग जारी रखने के लिए कृपया इंटरनेट चालू करें और ऐप को पुनरारंभ करें।</string>
+
+</resources>

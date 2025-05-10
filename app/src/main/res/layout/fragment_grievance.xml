@@ -1,0 +1,368 @@
+<com.mycca.custom.CircularReveal.Widget.RevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:tag="grievancefragment"
+    tools:context=".fragments.SubmitGrievanceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?android:attr/actionBarSize"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/circle"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_15" />
+
+                <Spinner
+                    android:id="@+id/spinner_grievance_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_spinner"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/g_type"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_15" />
+
+                <Spinner
+                    android:id="@+id/spinner_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_spinner"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/submitted_by"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_15" />
+
+                <Spinner
+                    android:id="@+id/spinner_submitted_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_spinner"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <LinearLayout
+                android:id="@+id/layout_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:paddingStart="@dimen/padding_large"
+                    android:text="@string/upload_using"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_12"
+                    tools:ignore="RtlSymmetry" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_identifier_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_medium">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonPensioner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/p_code" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonHR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/hr_num" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonStaff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/staff_num" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_pensioner_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_min"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/padding_small">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_grievance_pcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/p_code"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/padding_small">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_grievance_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/mobile_num"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/padding_small">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_grievance_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/padding_small">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_grievance_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/g_details"
+                    android:singleLine="false"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <TextView
+                android:id="@+id/textview_selected_file_count_grievance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/colorOffWhite"
+                android:drawablePadding="@dimen/padding_medium"
+                android:gravity="center"
+                android:padding="@dimen/padding_medium"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_selected_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_attach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_buttons"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/margin_large"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:tint="@color/colorWhite"
+        app:srcCompat="@drawable/ic_view_menu_black_24dp"
+        tools:targetApi="m" />
+
+    <com.mycca.custom.FabRevealMenu.FabView.FABRevealMenu
+        android:id="@+id/fabMenu_submit_grievance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:foregroundTint="@color/colorWhite"
+        app:animateItems="true"
+        app:menuBackgroundColor="@color/colorPrimaryLight"
+        app:menuDirection="up"
+        app:menuSize="normal"
+        app:menuTitleDisabledTextColor="@color/colorAccent"
+        app:menuTitleTextColor="@color/colorWhite"
+        app:showOverlay="true"
+        app:showTitle="true"
+        tools:targetApi="lollipop" />
+
+    <LinearLayout
+        android:id="@id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_submit"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/custom_button"
+            android:text="@string/submit_now"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_18" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".01" />
+
+        <Button
+            android:id="@+id/button_save"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/custom_button"
+            android:text="@string/save"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_18" />
+
+    </LinearLayout>
+
+</com.mycca.custom.CircularReveal.Widget.RevealRelativeLayout>
+
+

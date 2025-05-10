@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/settings"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action_invite"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="@string/invite"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action_feedback"
+        android:icon="@drawable/ic_feedback_black_24dp"
+        android:title="@string/feedback" />
+
+    <item
+        android:id="@+id/action_about_us"
+        android:icon="@drawable/ic_detail"
+        android:title="@string/about" />
+</menu>

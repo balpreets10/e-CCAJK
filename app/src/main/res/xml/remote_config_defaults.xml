@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+
+    <entry>
+        <key>latest_version</key>
+        <value>5</value>
+    </entry>
+
+    <entry>
+        <key>welcome_message</key>
+        <value>Welcome to my awesome app!</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->

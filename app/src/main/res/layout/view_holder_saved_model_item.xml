@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_track_grievance_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_medium"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorOffWhite"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textview_value1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_medium"
+        android:paddingRight="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_small"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="@dimen/text_20" />
+
+    <TextView
+        android:id="@+id/textview_value2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_medium"
+        android:paddingRight="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_small"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_18" />
+
+    <ImageButton
+        android:id="@+id/delete_saved_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_large"
+        android:layout_gravity="end"
+        android:background="@null"
+        android:tint="@color/colorAccent"
+        app:srcCompat="@drawable/ic_delete_black_24dp"
+        tools:ignore="ContentDescription,RtlSymmetry" />
+
+</LinearLayout>

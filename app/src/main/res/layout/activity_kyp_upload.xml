@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.KypUploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/circle"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_15" />
+
+        <Spinner
+            android:id="@+id/spinner_kyp_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_spinner"
+            android:spinnerMode="dropdown" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/padding_small">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_kyp_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_large"
+                android:drawableTint="@color/colorAccent"
+                android:hint="@string/mobile_num"
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true"
+                tools:targetApi="m" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@color/colorLightGray" />
+
+        <ImageView
+            android:id="@+id/imageView_kyp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_weight=".7"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/add_kyp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/custom_button_accent_light"
+            android:text="@string/add_image"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_kyp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/custom_button_accent_light"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

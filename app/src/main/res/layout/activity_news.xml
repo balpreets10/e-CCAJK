@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_xlarge"
+    tools:context="com.mycca.activity.NewsActivity">
+
+    <TextView
+        android:id="@+id/textview_news_activity_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_25" />
+
+
+    <TextView
+        android:id="@+id/textview_news_activity_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/margin_large"
+        android:fontFamily="serif"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textview_news_activity_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:fontFamily="serif"
+        android:scrollbars="vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_20" />
+
+</LinearLayout>

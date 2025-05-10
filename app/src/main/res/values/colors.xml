@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ee8317</color>
+    <color name="colorPrimaryDark">#b35f0a</color>
+    <color name="colorPrimaryLight">#eca864</color>
+    <color name="colorAccent">#399236</color>
+    <color name="colorAccentLight">#80bf7e</color>
+    <color name="colorAccentDark">#12660f</color>
+    <color name="colorSecondary">#0D47A1</color>
+
+    <color name="colorGray">#6c6c6c</color>
+    <color name="colorIcons">#212121</color>
+    <color name="colorLightGray">#cecbcb</color>
+    <color name="colorOffWhite">#eeeeee</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorLightRed">#e64d4d</color>
+    <color name="colorMaroon">#c11010</color>
+    <color name="colorNavyBlue">#000080</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightBlack">#333333</color>
+    <color name="colorSaffron">#ee8317</color>
+    <color name="colorGreen">#399236</color>
+    <color name="colorTransparentBlack">#14000000</color>
+    <color name="colorTranslucentDarkBlack">#dd000000</color>
+    <color name="colorTranslucentBlack">#bb000000</color>
+    <color name="inactive_indicator">#4D000000</color>
+
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+
+    <color name="colorOverlayLight">#40000000</color>
+    <color name="colorOverlayDark">#AA000000</color>
+
+    <!-- Barcode scanner -->
+    <color name="top_bar_background">#EBF1DE</color>
+    <color name="top_bar_text_color">#D52736</color>
+    <color name="app_background">#EEEEEE</color>
+    <color name="home_list_background_color">#DCE1E3</color>
+    <color name="scanned_data_text_color">#D52736</color>
+    <color name="scanned_data_item_border">#828790</color>
+    <color name="action_save_background">#FAB50F</color>
+    <color name="action_cancel_background">#D62736</color>
+</resources>
+
+
+<!--Deep Orange-->
+<!--<color name="colorPrimary">#FF5722</color>-->
+<!--<color name="colorPrimaryDark">#E64A19</color>-->
+<!--<color name="colorPrimaryLight">#FFCCBC</color>-->
+
+<!--Green-->
+<!--<color name="colorAccent">#4CAF50</color>-->
+<!--<color name="colorAccentLight">#a3e9a5</color>-->
+<!--<color name="colorAccentDark">#266b28</color>-->
+
+<!--<color name="colorPrimary">#2196F3</color>-->
+<!--<color name="colorPrimaryDark">#1976d2</color>-->
+<!--<color name="colorPrimaryLight">#BBDEFB</color>-->
+<!--<color name="colorAccent">#f44336</color>-->
+<!--<color name="colorAccentLight">#ffcdd2</color>-->
+<!--<color name="colorAccentDark">#d32f2f</color>-->

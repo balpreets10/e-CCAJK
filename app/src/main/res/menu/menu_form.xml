@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_clear_form_data"
+        android:iconTint="@color/colorWhite"
+        android:title="@string/clear"
+        app:showAsAction="always"
+        android:tooltipText="@string/action_clear_all"
+        android:icon="@drawable/ic_clear_all_black_24dp"
+        tools:targetApi="o" />
+</menu>

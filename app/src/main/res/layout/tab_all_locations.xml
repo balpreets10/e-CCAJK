@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="all_locations_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons_bar"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_search_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:background="@drawable/custom_button"
+            android:text="@string/search"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_15" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/button_sort_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:background="@drawable/custom_button"
+            android:text="@string/sort"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_15"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+
+    <!-- <RadioGroup
+         android:id="@+id/search"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+             <RadioButton
+                 android:id="@+id/radioButtonName"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Name" />
+
+             <RadioButton
+                 android:id="@+id/radioButtonState"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Circle" />
+
+     </RadioGroup>
+ -->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_locations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttons_bar"
+        android:background="@color/colorLightGray"
+        android:paddingBottom="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_medium"/>
+
+</RelativeLayout>

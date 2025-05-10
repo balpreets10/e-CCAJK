@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_track_grievance_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large">
+
+        <TextView
+            android:id="@+id/textview_ref_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_small"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_min"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_small"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_min"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_18" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/expandable_area_track_grievance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_small">
+
+        <TextView
+            android:id="@+id/textview_confirm5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_large"
+            android:drawableTint="@color/colorAccentDark"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingTop="@dimen/padding_medium"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_18"
+            tools:ignore="RtlSymmetry"
+            tools:targetApi="m" />
+
+        <TextView
+            android:id="@+id/textview_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_large"
+            android:drawableTint="@color/colorAccentDark"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingTop="@dimen/padding_medium"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_18"
+            tools:ignore="RtlSymmetry"
+            tools:targetApi="m" />
+
+
+        <TextView
+            android:id="@+id/textview_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_large"
+            android:drawableTint="@color/colorAccentDark"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingTop="@dimen/padding_medium"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_18"
+            tools:ignore="RtlSymmetry"
+            tools:targetApi="m" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorGray" />
+
+</LinearLayout>

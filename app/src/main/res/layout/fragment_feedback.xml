@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorOffWhite"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_medium"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_15"
+                android:text="@string/like_the_application" />
+
+            <Button
+                android:id="@+id/btn_feedback_rate_application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/padding_medium"
+                android:background="@drawable/custom_button_accent_light"
+                android:text="@string/rate_5_stars"
+                android:textColor="@color/colorOffWhite"
+                android:textSize="@dimen/text_18" />
+
+
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_marginTop="@dimen/margin_medium"-->
+            <!--android:background="@color/colorBlack">-->
+
+        <!--</View>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_15"
+                android:textColor="@color/colorBlack"
+                android:text="@string/have_a_suggestion" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_feedback_submit_suggestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/suggestion"
+                    android:maxLines="5"
+                    android:padding="@dimen/margin_medium" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_feedback_submit_advice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/custom_button_accent_light"
+                android:text="@string/submit_advice"
+                android:textColor="@color/colorOffWhite"
+                android:textSize="@dimen/text_18" />
+        </LinearLayout>
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_marginTop="@dimen/margin_medium"-->
+            <!--android:background="@color/colorBlack">-->
+
+        <!--</View>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/margin_large"-->
+            <!--android:layout_marginRight="@dimen/margin_large"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/margin_medium"-->
+                <!--android:text="Found an issue?" />-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/spinner_feedback_error_types"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/padding_medium"-->
+                <!--android:layout_marginRight="@dimen/padding_medium"-->
+                <!--android:background="@drawable/bg_spinner">-->
+
+            <!--</Spinner>-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<android.support.design.widget.TextInputEditText-->
+                    <!--android:id="@+id/et_feedback_report_issue"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Details of Problem"-->
+                    <!--android:padding="@dimen/margin_medium" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_feedback_report_issue"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:background="@drawable/custom_button_rounded"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:text=" Report Issue "-->
+                <!--android:textColor="@color/colorOffWhite"-->
+                <!--android:textSize="@dimen/text_18"-->
+                <!--android:textStyle="bold" />-->
+
+
+        <!--</LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_large"
+    android:background="@color/colorWhite"
+    android:elevation="@dimen/elevation_large"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/corner_radius_large"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/textview_news_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="serif"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_news_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_news_headline"
+            android:layout_marginTop="@dimen/margin_large"
+            android:fontFamily="serif"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/padding_xxxlarge"
+            android:paddingRight="@dimen/padding_xxxlarge"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_18"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textview_news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_news_headline"
+            android:layout_marginTop="@dimen/margin_large"
+            android:fontFamily="serif"
+            android:paddingEnd="@dimen/padding_xxxlarge"
+            android:paddingStart="@dimen/padding_large"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_18"
+            android:textStyle="italic" />
+
+        <ImageButton
+            android:id="@+id/img_btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/img_btn_delete"
+            android:background="@null"
+            android:paddingEnd="@dimen/padding_medium"
+            android:paddingStart="@dimen/padding_medium"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_edit_black_24dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/img_btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:paddingEnd="@dimen/padding_medium"
+            android:paddingStart="@dimen/padding_medium"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_delete_black_24dp"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

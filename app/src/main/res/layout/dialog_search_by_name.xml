@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/elevation_medium"
+    android:orientation="vertical"
+    tools:targetApi="lollipop">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_large"
+        android:text="@string/search_locations"
+        android:textSize="@dimen/text_18"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:padding="@dimen/padding_medium">
+
+        <AutoCompleteTextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:drawablePadding="@dimen/padding_medium"
+            android:drawableTint="@color/colorAccent"
+            android:dropDownHeight="200dp"
+            android:hint="@string/location_hint"
+            android:textSize="@dimen/text_20"
+            tools:targetApi="m" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

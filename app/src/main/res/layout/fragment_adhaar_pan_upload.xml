@@ -1,0 +1,242 @@
+<com.mycca.custom.CircularReveal.Widget.RevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    tools:context="com.mycca.fragments.PanAdhaarUploadSubmittableFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?android:attr/actionBarSize"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/circle"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_15" />
+
+                <Spinner
+                    android:id="@+id/spinner_pan_adhaar_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_spinner"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <LinearLayout
+                android:id="@+id/layout_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_large"
+                    android:text="@string/upload_using"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_15"
+                    tools:ignore="RtlSymmetry" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_identifier_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_medium">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonPensioner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/p_code" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonHR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/hr_num" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_pensioner_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/p_code">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_pan_adhaar_pcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_pan_adhaar_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:singleLine="true"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/padding_small">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_pan_adhaar_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/mobile_num"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <TextView
+                android:id="@+id/textview_filename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/colorOffWhite"
+                android:drawablePadding="@dimen/padding_medium"
+                android:gravity="center"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/no_image"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageview_selected_image"
+                android:layout_width="108dp"
+                android:layout_height="192dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_small"
+                android:src="@null"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_aadhar_pan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_upload"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_large"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:tint="@color/colorWhite"
+        app:srcCompat="@drawable/ic_view_menu_black_24dp"
+        tools:targetApi="m" />
+
+    <com.mycca.custom.FabRevealMenu.FabView.FABRevealMenu
+        android:id="@+id/fabMenu_pan_aadhar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:foregroundTint="@color/colorWhite"
+        app:animateItems="true"
+        app:menuBackgroundColor="@color/colorPrimaryLight"
+        app:menuDirection="up"
+        app:menuSize="normal"
+        app:menuTitleDisabledTextColor="@color/colorAccent"
+        app:menuTitleTextColor="@color/colorWhite"
+        app:showOverlay="true"
+        app:showTitle="true"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/custom_button"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_18" />
+
+</com.mycca.custom.CircularReveal.Widget.RevealRelativeLayout>

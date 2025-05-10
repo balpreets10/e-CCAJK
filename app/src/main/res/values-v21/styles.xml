@@ -1,0 +1,50 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar.Splash">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorSaffron</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.RegOrLogin" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorOffWhite</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Home">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Barcode Resources -->
+    <style name="AppTheme.scannedData" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/scanned_data_text_size</item>
+        <item name="android:textColor">@color/scanned_data_text_color</item>
+    </style>
+
+    <style name="AppTheme.scannedData.item" parent="AppTheme.scannedData">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_marginBottom">@dimen/scanned_data_item_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/scanned_data_item_margin_left</item>
+    </style>
+
+    <style name="AppTheme.actionButton" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_margin">@dimen/action_button_item_margin</item>
+        <item name="android:padding">@dimen/action_button_item_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+</resources>

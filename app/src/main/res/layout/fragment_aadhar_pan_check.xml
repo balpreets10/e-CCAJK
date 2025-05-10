@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycca.unused.AadharPanCheckFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edittext_pcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/p_code"
+                android:inputType="number"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_check_status"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccentDark"
+        android:text="Check Update Status"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_18" />
+
+
+    <TextView
+        android:id="@+id/textView_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_large"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_20" />
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_status"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:padding="@dimen/padding_large"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_15" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccentDark"
+        android:text="UPLOAD NOW"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_18" />
+
+
+</RelativeLayout>

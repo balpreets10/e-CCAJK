@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_download_kyp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:background="@color/colorAccentLight">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/download_kyp_form"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_submit_kyp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/ll_download_kyp"
+        android:background="@color/colorAccentLight">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/submit_kyp_form"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

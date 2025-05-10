@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOffWhite"
+    tools:context=".fragments.UpdatePensionFileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?android:attr/actionBarSize"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/circle"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_15" />
+
+                <Spinner
+                    android:id="@+id/spinner_update_pension_circles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_spinner"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="File Status"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_15" />
+
+                <Spinner
+                    android:id="@+id/spinner_update_pension_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_spinner"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hr_num">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_update_pension_hr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/padding_small">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_update_pension_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/mobile_num"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/padding_small">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_update_pension_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/email"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    tools:targetApi="m" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/colorLightGray" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_update_pension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/custom_button"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_18" />
+
+</RelativeLayout>
